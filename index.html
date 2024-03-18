@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiz-ChatBot</title>
+    <link rel="stylesheet" href="chatbotstyle.css">
+    <script src="cahtbotscript.js"></script>
+</head>
+<body>
+    <div class="chat-circle" id="chatCircle" onclick="toggleChatbox()">
+        <div class="innerCircle">  
+        </div>
+    </div>
+    <div class="chat-box" id="chatBox" onload="startFunction()">
+        <div class="navbar">
+            
+            <div class="personalInfo">
+                <label id="name">Khilesh Thakur</label>
+                <label id="lastseen">last seen today at 3:24 pms</label>
+            </div>
+        </div>
+        <div class="scrollable" id="myScrollable">
+
+            <div id="chatting" class="chatting">
+                <ul id="listUL">
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="sendBar">
+                <input id="inputMSG" onkeypress="isEnter(event)" type="text" placeholder="Type a message" autofocus>
+                <svg onclick="sendMsg()" viewBox="0 0 24 24" width="24" height="24" class="">
+                    <path fill="currentColor"
+                        d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+                </svg>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
